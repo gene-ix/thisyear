@@ -1,0 +1,57 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&display=swap');
+
+#root {
+    * {}
+
+    .app {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+#chart {
+    width: 80vmin;
+    position: relative;
+
+    svg {
+        circle {
+            stroke: #ddd;
+            stroke-width: 10;
+            fill: none;
+        }
+
+        path {
+            stroke: #0cc;
+            stroke-width: 10;
+            fill: none;
+        }
+    }
+
+    .text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        .rate {
+            font-size: 13vmin;
+            font-family: 'DM Mono', monospace;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .tweet {
+            font-size: 4vmin;
+            color: #0cc;
+        }
+    }
+}
